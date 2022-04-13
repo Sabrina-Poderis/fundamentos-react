@@ -5,24 +5,28 @@ import Primeiro from './components/basics/Primeiro'
 import ComParametro from './components/basics/ComParametro'
 import Fragmento from './components/basics/Fragmento'
 import Aleatorio from './components/basics/Aleatorio'
+import Card from './components/layouts/Card'
 
+// eslint-disable-next-line import/no-anonymous-default-export
 export default (props) => 
     <div id="app">
-        <h1>Fundamentos do React</h1>
-        <Aleatorio
-            min={1.3}
-            max={2.564}
-        ></Aleatorio>
-        <Fragmento></Fragmento>
-        <ComParametro 
-            titulo="Situação do aluno"
-            aluno="Sabrina"
-            nota={6.0}>
-        </ComParametro>
-        <ComParametro 
-            titulo="Situação do aluno"
-            aluno="Maria"
-            nota={7.2}>
-        </ComParametro>
-        <Primeiro></Primeiro>
+        <Card titulo="Desafio aleatório">
+            <Aleatorio min={1} max={100}></Aleatorio>
+        </Card>
+        <Card titulo="Fragmento">
+            <Fragmento></Fragmento>
+        </Card>
+        <Card titulo="Fragmento">
+            <Fragmento></Fragmento>
+        </Card>
+        <Card titulo="Com parâmetro">
+            <ComParametro 
+                titulo="Situação do aluno"
+                aluno="Sabrina"
+                nota={6.0}>
+            </ComParametro>
+        </Card>
+        <Card titulo="Primeiro componente">
+            <Primeiro></Primeiro>
+        </Card>
     </div>
