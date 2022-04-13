@@ -18,7 +18,7 @@ ReactDOM.render(
         <ComParametro 
             titulo="Situação do aluno"
             aluno="Maria"
-            nota={7.0}>
+            nota={7.2}>
         </ComParametro>
     </div>, 
     root
