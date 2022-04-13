@@ -1,9 +1,12 @@
 .Card {
+    display: flex;
+    flex-direction: column;
     background-color: #fa2;
     border: 3px solid #fa2;
     border-radius: 5px;
     color: #100;
     margin: 10px;
+    min-width: 300px;
 }
 
 .Card .Title {
@@ -14,5 +17,6 @@
 }
 
 .Card .Content {
+    flex-grow: 1;
     padding: 20px;
 }
