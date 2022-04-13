@@ -6,12 +6,16 @@ import Primeiro from './components/basics/Primeiro'
 import ComParametro from './components/basics/ComParametro'
 import Fragmento from './components/basics/Fragmento'
 import Aleatorio from './components/basics/Aleatorio'
+import Familia from './components/basics/Familia'
 import Card from './components/layouts/Card'
 
 // eslint-disable-next-line import/no-anonymous-default-export
 export default (props) => 
     <div className="App">
         <div className="Cards">
+            <Card titulo="Família" color="#ADB9E3">
+                <Familia sobrenome="Silva"></Familia>
+            </Card>
             <Card titulo="Desafio aleatório" color="#a9e5bb">
                 <Aleatorio min={1} max={100}></Aleatorio>
             </Card>
