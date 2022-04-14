@@ -2,6 +2,7 @@ import "./App.css"
 import React from "react"
 
 // Componentes
+import ParOuImpar from './components/conditionals/ParOuImpar'
 import TabelaProduto from './components/repeticao/TabelaProduto'
 import ListaAlunos from './components/repeticao/ListaAlunos'
 import Primeiro from './components/basics/Primeiro'
@@ -16,6 +17,9 @@ import Card from './components/layouts/Card'
 export default (props) => 
     <div className="App">
         <div className="Cards">
+            <Card titulo="Renderização condicional" color="#E980FC">
+                <ParOuImpar numero={20}></ParOuImpar>
+            </Card>
             <Card titulo="Tabela de produtos" color="#FF5154">
                 <TabelaProduto></TabelaProduto>
             </Card>
