@@ -14,11 +14,15 @@ import Familia from './components/basics/Familia'
 import FamiliaMembro from './components/basics/FamiliaMembro'
 import Card from './components/layouts/Card'
 import DiretaPai from "./components/comunicacao/DiretaPai"
+import IndiretaPai from "./components/comunicacao/IndiretaPai"
 
 // eslint-disable-next-line import/no-anonymous-default-export
 export default (props) => 
     <div className="App">
         <div className="Cards">
+            <Card titulo="Comunicação indireta" color="#549F93">
+                <IndiretaPai></IndiretaPai>
+            </Card>
             <Card titulo="Comunicação direta" color="#694D75">
                 <DiretaPai></DiretaPai>
             </Card>
