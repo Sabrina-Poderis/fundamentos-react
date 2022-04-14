@@ -2,6 +2,7 @@ import "./App.css"
 import React from "react"
 
 // Componentes
+import ListaAlunos from './components/repeticao/ListaAlunos'
 import Primeiro from './components/basics/Primeiro'
 import ComParametro from './components/basics/ComParametro'
 import Fragmento from './components/basics/Fragmento'
@@ -14,6 +15,9 @@ import Card from './components/layouts/Card'
 export default (props) => 
     <div className="App">
         <div className="Cards">
+            <Card titulo="Lista de alunos" color="#CC3F0C">
+                <ListaAlunos></ListaAlunos>
+            </Card>
             <Card titulo="Família" color="#ADB9E3">
                 <Familia sobrenome="Silva">
                 <FamiliaMembro nome="Ana"></FamiliaMembro>
