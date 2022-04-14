@@ -13,11 +13,15 @@ import Aleatorio from './components/basics/Aleatorio'
 import Familia from './components/basics/Familia'
 import FamiliaMembro from './components/basics/FamiliaMembro'
 import Card from './components/layouts/Card'
+import DiretaPai from "./components/comunicacao/DiretaPai"
 
 // eslint-disable-next-line import/no-anonymous-default-export
 export default (props) => 
     <div className="App">
         <div className="Cards">
+            <Card titulo="Comunicação direta" color="#694D75">
+                <DiretaPai></DiretaPai>
+            </Card>
             <Card titulo="Renderização condicional - IF" color="#1B5299">
                 <UsuarioInfo usuario={{nome: 'Sabrina'}}></UsuarioInfo>
                 <UsuarioInfo usuario={{}}></UsuarioInfo>
