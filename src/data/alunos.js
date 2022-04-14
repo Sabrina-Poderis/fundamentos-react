@@ -1,3 +1,4 @@
+/* eslint-disable import/no-anonymous-default-export */
 export default [
     {id:1, nome: "Gobi", nota:9.2},
     {id:2, nome: "Blendão", nota:8.5},

@@ -2,6 +2,7 @@ import "./App.css"
 import React from "react"
 
 // Componentes
+import TabelaProduto from './components/repeticao/TabelaProduto'
 import ListaAlunos from './components/repeticao/ListaAlunos'
 import Primeiro from './components/basics/Primeiro'
 import ComParametro from './components/basics/ComParametro'
@@ -15,6 +16,9 @@ import Card from './components/layouts/Card'
 export default (props) => 
     <div className="App">
         <div className="Cards">
+            <Card titulo="Tabela de produtos" color="#FF5154">
+                <TabelaProduto></TabelaProduto>
+            </Card>
             <Card titulo="Lista de alunos" color="#CC3F0C">
                 <ListaAlunos></ListaAlunos>
             </Card>
